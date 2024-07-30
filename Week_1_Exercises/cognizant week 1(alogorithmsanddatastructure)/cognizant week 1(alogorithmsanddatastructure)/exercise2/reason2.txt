@@ -1,0 +1,48 @@
+Big O Notation
+Definition: Big O notation describes the upper bound of an algorithm's running time, providing a
+worst-case scenario for how the time or space grows as the input size increases.
+Purpose: It helps in analyzing and comparing the efficiency of algorithms, allowing
+us to predict their behavior with large inputs.
+
+
+Search Operation Scenarios
+Best Case: The scenario where the search operation takes the least time (e.g., the item is the first element).
+Average Case: The expected time taken by the search operation, averaging over all possible inputs.
+Worst Case: The scenario where the search operation takes the most time 
+(e.g., the item is not found or is the last element).
+
+
+Time Complexity Comparison
+
+Linear Search:
+Best Case: O(1) (item is the first element)
+Average Case: O(n/2) = O(n)
+Worst Case: O(n) (item is the last element or not found)
+
+Binary Search:
+Best Case: O(1) (item is the middle element)
+Average Case: O(log n)
+Worst Case: O(log n) (item not found)
+  
+
+
+Suitable Algorithm for the Platform
+
+Binary Search: More suitable for the e-commerce platform because:
+Efficiency: It has a lower time complexity (O(log n)) compared to linear search (O(n)), 
+making it faster for large datasets.
+Requirement: The array needs to be sorted, but this is a one-time cost, after which searches are 
+much faster.
+
+Summary:
+Using a binary search over a sorted array is generally more efficient for search 
+operations on an e-commerce platform due to its O(log n) time complexity, providing 
+faster search times for large inventories.
+
+
+
+
+
+
+
+

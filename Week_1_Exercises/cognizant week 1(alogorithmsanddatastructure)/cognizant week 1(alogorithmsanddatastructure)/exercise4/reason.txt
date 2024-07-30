@@ -1,0 +1,48 @@
+Array Representation in Memory
+
+Memory Layout: Arrays are contiguous blocks of memory where each element is of the same type and size. 
+The memory address of the first element (base address) plus an offset (index multiplied by element size) gives 
+the memory address of any element in the array.
+
+Advantages:
+
+Constant Time Access: O(1) time complexity for accessing elements using an index.
+Predictable Memory Usage: Fixed size, known at compile-time or run-time, allows for efficient memory allocation.
+Cache Friendly: Due to contiguous memory layout, arrays benefit from spatial locality, improving 
+cache performance.
+
+Time Complexity
+Add Employee:
+
+Best Case: O(1) (adding at the end)
+Worst Case: O(1)
+Search Employee:
+
+Best Case: O(1) (first element match)
+Worst Case: O(n) (element not found)
+Traverse Employees:
+
+Best Case: O(n)
+Worst Case: O(n)
+Delete Employee:
+
+Best Case: O(1) (last element)
+Worst Case: O(n) (first element, requires moving the last element)
+
+Limitations of Arrays
+
+Fixed Size: Array size must be defined at creation, making it difficult to handle dynamic data sets.
+Inefficient Deletion: Deleting an element requires shifting elements, leading to O(n) complexity 
+in the worst case.
+Memory Waste: Allocating more space than needed leads to wasted memory, while under-allocating can 
+limit the ability to add new elements.
+
+When to Use Arrays
+When the number of elements is known and constant.
+When you need fast access to elements using an index.
+When memory usage is predictable and contiguous allocation is beneficial.
+
+Summary
+Arrays provide efficient, predictable memory usage and constant-time access, but their fixed size and 
+inefficient deletion operations can be limiting. They are suitable for scenarios with a known, constant 
+number of elements and where fast access is required.

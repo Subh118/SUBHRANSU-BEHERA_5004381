@@ -1,0 +1,50 @@
+Linear Search
+Description: Sequentially checks each element of the list until the desired element is found or the list ends.
+Time Complexity:
+Best Case: O(1) (if the element is the first one)
+Average Case: O(n/2) = O(n)
+Worst Case: O(n) (if the element is the last one or not present)
+Usage: Useful for unsorted or small datasets.
+
+
+Binary Search
+Description: Efficiently finds an element in a sorted list by repeatedly dividing the search interval in half.
+Time Complexity:
+Best Case: O(1) (if the middle element is the target)
+Average Case: O(log n)
+Worst Case: O(log n)
+Usage: Requires the dataset to be sorted. Efficient for large datasets.
+
+
+
+
+Time Complexity Comparison
+Linear Search:
+
+Best Case: O(1) (if the element is the first one)
+Average Case: O(n/2) = O(n)
+Worst Case: O(n) (if the element is the last one or not present)
+Binary Search:
+
+Best Case: O(1) (if the middle element is the target)
+Average Case: O(log n)
+Worst Case: O(log n) (if the element is not present)
+When to Use Each Algorithm
+
+
+Linear Search:
+Use when the dataset is small or unsorted.
+Simple to implement and does not require pre-sorting.
+
+
+Binary Search:
+Use when the dataset is large and sorted.
+More efficient with a time complexity of O(log n), making it suitable for large datasets.
+
+
+Summary
+In a library management system, linear search is useful for small or unsorted collections due to its 
+simplicity, whereas binary search is preferred for larger, sorted collections due to its 
+logarithmic time complexity and efficiency in handling large datasets.
+
+

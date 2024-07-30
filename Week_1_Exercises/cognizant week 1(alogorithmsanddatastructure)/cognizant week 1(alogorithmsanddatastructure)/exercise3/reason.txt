@@ -1,0 +1,11 @@
+Array Representation in Memory
+Memory Layout: Arrays are contiguous blocks of memory where each element is of the same type and size. 
+The memory address of the first element (base address) plus an offset (index multiplied by element size) 
+gives the address of any element.
+
+Advantages:
+Constant Time Access: O(1) time complexity for accessing elements using an index.
+Predictable Memory Usage: Fixed size, known at compile-time or run-time, allows 
+for efficient memory allocation.
+Cache Friendly: Due to contiguous memory layout, arrays benefit from spatial locality, improving cache 
+performance.

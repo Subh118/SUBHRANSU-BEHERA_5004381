@@ -1,0 +1,14 @@
+Concept of Recursion
+
+Recursion: A method in which a function calls itself to solve a smaller instance of the same problem.
+Base Case: The condition under which the recursion ends, preventing infinite recursion.
+Recursive Case: The part where the function calls itself with a smaller or simpler input.
+Simplification: Recursion can make certain problems easier to solve by breaking them down into simpler, more manageable subproblems.
+
+
+
+Summary
+Recursion simplifies the problem of financial forecasting by breaking it down into 
+smaller subproblems. The recursive approach has a time complexity of 
+𝑂(𝑛)O(n). By using memoization, we can optimize the recursive solution to avoid excessive computation. 
+An iterative approach can further enhance efficiency by reducing space complexity.

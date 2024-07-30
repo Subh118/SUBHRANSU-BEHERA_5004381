@@ -1,0 +1,65 @@
+Time Complexity Analysis
+Add Product:
+
+Average Case: O(1)
+Worst Case: O(n) (due to potential rehashing in HashMap)
+Update Product:
+
+Average Case: O(1)
+Worst Case: O(1)
+Delete Product:
+
+Average Case: O(1)
+Worst Case: O(n) (due to potential rehashing in HashMap)
+Get Product:
+
+Average Case: O(1)
+Worst Case: O(1)
+
+
+Q1 Why Data Structures and Algorithms Are Essential for Large Inventories
+   Performance: Fast retrieval, insertion, and deletion of product information.
+   Scalability: Handle growing inventories without performance loss.
+   Memory Management: Efficient use of memory to handle large data volumes.
+   Data Integrity: Maintain consistency with concurrent operations.
+   Complex Operations: Enable sorting, filtering, and analytics.
+   Suitable Data Structures for Inventory Management
+
+
+ArrayList:
+Pros: Simple, indexed access.
+Cons: Slow insertion/deletion (O(n)).
+HashMap:
+
+Pros: Fast access, insertion, deletion (average O(1)).
+Cons: Higher memory use, potential O(n) in worst-case.
+TreeMap:
+
+Pros: Sorted order, O(log n) operations.
+Cons: Slower than HashMap, more complex.
+LinkedList:
+
+Pros: Fast insertion/deletion at known positions (O(1)).
+Cons: Slow search (O(n)).
+Binary Search Tree (BST):
+
+Pros: Efficient search, insertion, deletion (O(log n)).
+Cons: Can become unbalanced, complex to manage.
+
+Recommended Choice: HashMap
+
+Reason: 1.Provides average O(1) time complexity for key operations, making it ideal for large 
+          inventories needing quick access and updates.
+        2.By using a HashMap, the inventory management system ensures efficient handling 
+          of large inventories, with most operations having an average time complexity of O(1).
+
+
+Optimization Strategies
+
+Minimize Rehashing:
+Use an initial large capacity for the HashMap to minimize the frequency of rehashing.
+Load Factor Management:
+Choose an appropriate load factor to balance between space and time efficiency.
+Collision Handling:
+Java's HashMap uses chaining (linked lists) to handle collisions, which helps in maintaining O(1) 
+time complexity in most cases.

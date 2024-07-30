@@ -1,0 +1,63 @@
+Singly Linked List
+
+Description: A collection of nodes where each node contains data and a reference (or link) to the next node 
+in the sequence.
+Structure:
+Node: Contains data and a reference to the next node.
+Head: The first node in the list.
+Tail (Optional): The last node, which points to null.
+Advantages:
+Dynamic size: Can grow and shrink in size without the need for resizing or reallocating memory.
+Efficient insertions/deletions: Adding or removing nodes is generally O(1) if the position is known.
+
+Doubly Linked List
+Description: Similar to a singly linked list, but each node contains a reference to both the next 
+and previous nodes.
+Structure:
+Node: Contains data, a reference to the next node, and a reference to the previous node.
+Head: The first node in the list.
+Tail: The last node, which points to null.
+Advantages:
+Bidirectional traversal: Can traverse the list in both directions.
+Easier deletion: Can remove a node without needing to know the previous node
+
+
+
+Time Complexity
+Add Task:
+
+Best Case: O(1) (adding at the beginning)
+Worst Case: O(n) (adding at the end)
+Search Task:
+
+Best Case: O(1) (first element match)
+Worst Case: O(n) (element not found)
+Traverse Tasks:
+
+Best Case: O(n)
+Worst Case: O(n)
+Delete Task:
+
+Best Case: O(1) (first element)
+Worst Case: O(n) (last element or element not found)
+Advantages of Linked Lists Over Arrays for Dynamic Data
+Dynamic Size: Linked lists can grow and shrink as needed without the need for resizing or reallocation, 
+unlike arrays which have a fixed size.
+Efficient Insertions/Deletions: Linked lists provide efficient O(1) insertions and 
+deletions at known positions (especially at the beginning), whereas arrays require 
+O(n) time for these operations due to shifting elements.
+Memory Utilization: Linked lists allocate memory as needed, reducing the problem of 
+wasted memory in arrays that are over-allocated to handle potential future growth.
+
+Summary
+Linked lists, particularly singly linked lists, offer dynamic resizing and efficient insertion/deletion 
+operations, making them suitable for task management systems where the number of tasks can change frequently. 
+Their flexibility in managing dynamic data makes them advantageous over fixed-size arrays in such scenarios.
+
+
+
+
+
+
+
+
